@@ -1,0 +1,10 @@
+body {
+	margin: 0;
+	font-family: "Space Grotesk", system-ui, sans-serif;
+	background: #f5f6f7;
+	color: #111111;
+}
+
+* {
+	box-sizing: border-box;
+}
