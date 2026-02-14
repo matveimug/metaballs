@@ -1,10 +1,58 @@
+html {
+  font-size: 14px;
+}
+
 body {
-	margin: 0;
-	font-family: "Space Grotesk", system-ui, sans-serif;
-	background: #f5f6f7;
-	color: #111111;
+  margin: 0;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  background: #f5f6f7;
+  color: #111111;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.app-shell {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.tabs a {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 600;
+  padding: 0.45rem 0.7rem;
+  border-radius: 0.5rem;
+  transition:
+    background-color 120ms ease,
+    color 120ms ease;
+}
+
+.tabs a:hover {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.tabs a.active {
+  background: #111827;
+  color: #ffffff;
+}
+
+.content {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
 }
